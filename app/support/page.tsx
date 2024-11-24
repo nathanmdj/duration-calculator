@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 const SupportPage = () => {
   return (
@@ -18,7 +19,17 @@ const SupportPage = () => {
           height={300}
         />
       </div>
-      <p>Any amount will be much appreciated</p>
+      <p className="text-sm text-gray-500">or </p>
+      <Link
+        href="https://ko-fi.com/nathanmdj"
+        target="_blank"
+        className="text-blue-500 underline"
+      >
+        Paypal via Ko-Fi
+      </Link>
+      <p className="mt-4 text-sm text-gray-500">
+        Any amount will be much appreciated
+      </p>
     </div>
   )
 }
